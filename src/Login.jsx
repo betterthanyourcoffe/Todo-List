@@ -23,11 +23,7 @@ function Login() {
       );
       const user = userCredential.user;
       console.log("User logged in:", user);
-
-      // Store user ID locally
       localStorage.setItem("userId", user.uid);
-
-      // Optionally navigate to the todo page or another page
       navigate("/todo");
     } catch (error) {
       console.error("Error logging in:", error.message);
@@ -45,6 +41,10 @@ function Login() {
         className="bg-white border border-blue-300 p-6 rounded shadow-md w-96"
         onSubmit={handleSubmit}
       >
+        <h1 className="text-center text-2xl font-bold mb-4">
+          A Simple Todo List app
+        </h1>{" "}
+        {/* Title added here */}
         <div className="mb-4">
           <label className="block">Enter email</label>
           <input

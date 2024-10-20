@@ -6,7 +6,7 @@ import { onAuthStateChanged } from "firebase/auth"; // Import this function
 import Signup from "./Signup"; // Adjust the import path
 import Login from "./Login"; // Adjust the import path
 import ForgotPassword from "./ForgotPassword";
-import Todo from "./todo";
+import Todo from "./Todo";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
