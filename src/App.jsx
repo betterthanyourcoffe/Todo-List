@@ -1,6 +1,6 @@
 // App.jsx
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { auth } from "./firebase"; // Ensure the path is correct
 import { onAuthStateChanged } from "firebase/auth"; // Import this function
 import Signup from "./Signup"; // Adjust the import path
